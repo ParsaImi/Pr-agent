@@ -1,9 +1,5 @@
 # PR Agent
 
-<<<<<<< HEAD
-## Setup shared secret token using in both gitlab and pr agent
-SHARED_SECRET=$(python -c "import secrets; print(secrets.token_hex(10))")
-=======
 ## GitHub Public Repository Setup
 
 Add this to your GitHub Actions workflow:
@@ -48,7 +44,6 @@ Code Review, Code Improvement, and Code Description will be automatically trigge
 ### GitLab User for Code Review and Code Improvement
 
 Create a bot user for PR Agent and give it the reporter role (or just use the default `@git` user).
->>>>>>> c5e3564 (update readme)
 
 ### Configure PR Agent to Interact with GitLab
 
@@ -63,7 +58,7 @@ gitlab__shared_secret=YOUR_SHARED_SECRET
 config__git_provider=gitlab
 config__model=huggingface/openai/gpt-oss-120b:fastest
 config__fallback_models='["huggingface/together/deepseek-ai/DeepSeek-R1"]'
-HUGGINGFACE__key=YOUR HF API KEY
+HUGGINGFACE__key=YOUR HUGGINGFACE API KEY
 HUGGINGFACE__API_BASE=https://router.huggingface.co/v1
 config__custom_model_max_tokens=200000
 ```
@@ -235,3 +230,4 @@ In the repository where you want to use PR Agent, go to Settings > Webhooks > Ad
 - Push events (All branches)
 - Comments
 - Merge request events
+ Merge request events

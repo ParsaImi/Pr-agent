@@ -1,5 +1,13 @@
 # PR Agent
 
+## Table of Contents
+
+- [GitHub Public Repository Setup](#github-public-repository-setup)
+- [GitLab Repository Setup](#gitlab-repository-setup)
+- [Configure Webhook (Use Pragent)](#configure-webhook)
+
+---
+
 ## GitHub Public Repository Setup
 
 Add this to your GitHub Actions workflow:
@@ -230,4 +238,3 @@ In the repository where you want to use PR Agent, go to Settings > Webhooks > Ad
 - Push events (All branches)
 - Comments
 - Merge request events
- Merge request events

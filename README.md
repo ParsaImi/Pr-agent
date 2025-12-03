@@ -3,8 +3,8 @@
 ## Table of Contents
 
 - [GitHub Public Repository Setup](#github-public-repository-setup)
-- [GitLab Repository Setup](#gitlab-repository-setup)
-- [Configure Webhook (Use Pragent)](#configure-webhook)
+- [GitLab PrAgent Repository Setup](#gitlab-repository-setup)
+- [Configure Webhook (How to use configured PrAgent in any Gitlab project)](#configure-webhook)
 
 ---
 

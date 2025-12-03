@@ -64,10 +64,9 @@ gitlab__url=YOUR_GITLAB_URL
 gitlab__personal_access_token=YOUR_PERSONAL_ACCESS_TOKEN
 gitlab__shared_secret=YOUR_SHARED_SECRET
 config__git_provider=gitlab
-config__model=huggingface/openai/gpt-oss-120b:fastest
-config__fallback_models='["huggingface/together/deepseek-ai/DeepSeek-R1"]'
-HUGGINGFACE__key=YOUR HUGGINGFACE API KEY
-HUGGINGFACE__API_BASE=https://router.huggingface.co/v1
+config__model=gpt-5-nano
+OPENAI__key=YOUR OPENAI API KEY
+OPENAI__API_BASE=https://api.gapgpt.app/v1
 config__custom_model_max_tokens=200000
 ```
 
@@ -97,17 +96,18 @@ Copy the result value and use it in the `gitlab__shared_secret` variable.
 
 #### AI Model for Code Review and Code Improvement
 
-I have used different models from OpenAI, Gemini, DeepSeek, and Cohere, but some of them are not available for Iranian users and some of them have limitations for using their API.
+Using GPT-5-Nano model from GapGpt provider.
 
-However, Hugging Face worked for me, and I have used `huggingface/openai/gpt-oss-120b:fastest` as the main model and `huggingface/together/deepseek-ai/DeepSeek-R1` as the fallback model.
+`Note`: Hugging Face models works well if other Ai providers are not available for Iranian users.
+ I have used `huggingface/openai/gpt-oss-120b:fastest` and it works.
 
-#### Use Hugging Face API
+#### Use GapGpt ( or any other ai provider ) API
 
-Copy your API key from the Hugging Face website in Settings > Access Tokens and use it in the `HUGGINGFACE__key` variable.
+Copy your API key from the Provider website ( GapGpt in this case ) and use it in the `OPENAI__key` variable.
 
-#### Use Hugging Face API Base
+#### Use GapGpt API Base
 
-The `HUGGINGFACE__API_BASE` configuration parameter specifies the base URL endpoint for making API requests to Hugging Face's services.
+The `OPENAI__API_BASE` configuration parameter specifies the base URL endpoint for making API requests to GapGpt services.
 
 #### Maximum Context Window Size (in Tokens)
 
